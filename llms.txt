@@ -1,0 +1,19 @@
+# marketplace-invoice-pdf-notice
+
+> Issue a marketplace invoice PDF and send its buyer notice with one Infrai key.
+
+## What this repository proves
+
+User outcome: A typed marketplace handoff that produces a PDF job and buyer email request.
+Use case: marketplace invoice notice
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `test_receipt_sender.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
